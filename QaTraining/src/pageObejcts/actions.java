@@ -66,7 +66,7 @@ public class actions extends extentReportClass implements constants{
 	}
 	
 	public void typeInEmail() {
-		driver.findElement(By.id("customer-email")).sendKeys("hot@gmail.com");
+		driver.findElement(By.id("customer-email")).sendKeys("hot"+ Integer.toString(((new Random().nextInt(10))+1))+"@gmail.com");
 	}
 	
 	public void typeInPassword() {
